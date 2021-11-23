@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diabetics_Flask_App</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<style type="text/css">
+		body{
+			background-color: #ffcf0059;
+		}
+		.page-header{
+			background-color: blue;
+			width: 100%;
+			height: auto;
+			text-align: center;
+			padding-top: 5px;
+			color: #fff;
+		}
+		h1{
+			font-size: 40px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				 <div class="page-header">
+    				<h1>Diabetics Melletus Predictions</h1>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<form action="/data_predict" method="POST">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="preg">Preg:</label>
+							    <input type="text" class="form-control" id="preg" name="preg">
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="plas">Plas:</label>
+							    <input type="text" class="form-control" id="plas" name="plas">
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="pres">Pres:</label>
+							    <input type="text" class="form-control" id="pres" name="pres">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="skin">Skin:</label>
+							    <input type="text" class="form-control" id="skin" name="skin">
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="test">Test:</label>
+							    <input type="text" class="form-control" id="test" name="test">
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="mass">Mass:</label>
+							    <input type="text" class="form-control" id="mass" name="mass">
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="pedi">Pedi:</label>
+							    <input type="text" class="form-control" id="pedi" name="pedi">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="age">Age:</label>
+							    <input type="text" class="form-control" id="age" name="age">
+							</div>
+						</div>
+					</div>
+
+					
+				
+
+
+					<button type="submit" class="btn btn-default">Predict</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script
+</body>
+</html>
